@@ -10,6 +10,7 @@ public abstract class DayBase : IDay
     protected DayBase(int dayId)
     {
         _input1 = string.Empty;
+        _input1 = string.Empty;
 
         string filename = $"Days/inputs/day{dayId.ToString().PadLeft(2, '0')}_1.txt";
         if(File.Exists(filename))
