@@ -2,12 +2,12 @@
 
 namespace Runtime.Days;
 
-public abstract class DayBase : IDay
+public abstract class DaySolverBase : IDaySolver
 {
     protected readonly string _input1;
     protected readonly string _input2;
 
-    protected DayBase(int dayId)
+    protected DaySolverBase(int dayId)
     {
         _input1 = string.Empty;
         _input2 = string.Empty;

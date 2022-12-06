@@ -2,9 +2,9 @@
 
 namespace Runtime.Days;
 
-public class Day06 : DayBase
+public class Day06Solver : DaySolverBase
 {   
-    public Day06() : base(6)
+    public Day06Solver() : base(6)
     {
     }
 

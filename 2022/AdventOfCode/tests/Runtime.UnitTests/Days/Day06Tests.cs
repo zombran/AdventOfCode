@@ -17,7 +17,7 @@ public class Day06Tests
         // arrange
 
         // act
-        var day = new Day06();
+        var day = new Day06Solver();
 
         // assert
         Assert.NotNull(day);
@@ -40,14 +40,14 @@ public class Day06Tests
         // act
 
         // assert
-        Assert.Equal(expectedResult, Day06.FindMarker(input, packetSize));
+        Assert.Equal(expectedResult, Day06Solver.FindMarker(input, packetSize));
     }
 
     [Fact]
     public void ShouldSolvePart1WithoutError()
     {
         // arrange
-        var day = new Day06();
+        var day = new Day06Solver();
 
         // act
         var result = day.SolvePart1();
@@ -60,7 +60,7 @@ public class Day06Tests
     public void ShouldSolvePart2WithoutError()
     {
         // arrange
-        var day = new Day06();
+        var day = new Day06Solver();
 
         // act
         var result = day.SolvePart2();

@@ -2,7 +2,7 @@
 
 namespace Runtime.Days;
 
-public interface IDay
+public interface IDaySolver
 {
     int SolvePart1();
 
