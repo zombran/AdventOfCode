@@ -18,7 +18,7 @@ public class Day06 : DayBase
         return FindMarker(_input2, 14);
     }
 
-    private int FindMarker(string input, int packetSize)
+    public static int FindMarker(string input, int packetSize)
     {
         if (string.IsNullOrWhiteSpace(input)) return -1;
         if (packetSize <= 0 || packetSize > input.Length) return -1;
