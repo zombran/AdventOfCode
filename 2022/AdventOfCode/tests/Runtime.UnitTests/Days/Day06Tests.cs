@@ -24,15 +24,19 @@ public class Day06Tests
     }
 
     [Theory]
-    [InlineData("bvwbjplbgvbhsrlpgdmjqwftvncz",         4,  5)]
-    [InlineData("nppdvjthqldpwncqszvftbrmjlhg",         4,  6)]
-    [InlineData("nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg",    4,  10)]
-    [InlineData("zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw",     4,  11)]
-    [InlineData("mjqjpqmgbljsphdztnvjfqwrcgsmlb",       14, 19)]
-    [InlineData("bvwbjplbgvbhsrlpgdmjqwftvncz",         14, 23)]
-    [InlineData("nppdvjthqldpwncqszvftbrmjlhg",         14, 23)]
+    [InlineData("bvwbjplbgvbhsrlpgdmjqwftvncz",          4,   5)]
+    [InlineData("nppdvjthqldpwncqszvftbrmjlhg",          4,   6)]
+    [InlineData("nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg",     4,  10)]
+    [InlineData("zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw",      4,  11)]
+    [InlineData("mjqjpqmgbljsphdztnvjfqwrcgsmlb",       14,  19)]
+    [InlineData("bvwbjplbgvbhsrlpgdmjqwftvncz",         14,  23)]
+    [InlineData("nppdvjthqldpwncqszvftbrmjlhg",         14,  23)]
     [InlineData("nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg",    14,  29)]
     [InlineData("zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw",     14,  26)]
+    [InlineData("",                                      4,  -1)]
+    [InlineData("zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw",     -5,  -1)]
+    [InlineData("bb",                                    4,  -1)]
+    [InlineData("bbbbbbbbbbbbbbbbbbb",                   4,  -1)]
     public void ShouldFindMarkerCorrectly(string input, int packetSize, int expectedResult)
     {
         // arrange

@@ -3,7 +3,7 @@
 namespace Runtime.Days;
 
 public class Day06Solver : DaySolverBase
-{   
+{
     public Day06Solver() : base(6)
     {
     }
@@ -11,7 +11,7 @@ public class Day06Solver : DaySolverBase
     public override int SolvePart1()
     {
         return FindMarker(_input1, 4);
-    }    
+    }
 
     public override int SolvePart2()
     {
@@ -23,7 +23,7 @@ public class Day06Solver : DaySolverBase
         if (string.IsNullOrWhiteSpace(input)) return -1;
         if (packetSize <= 0 || packetSize > input.Length) return -1;
 
-        for (int i = 0; i < input.Length; i++)
+        for (int i = 0; i < input.Length - packetSize; i++)
         {
             var packet = input.Substring(i, packetSize);
             if (HasUniqueCharacters(packet)) return i + packetSize;
