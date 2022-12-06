@@ -123,7 +123,7 @@ public class BenchmarkTests
     /// multiple times.
     /// </summary>
     [Fact]
-    public void ShouldNotResetOnMultipleCalls()
+    public void ShouldNotResetOnMultipleStopCalls()
     {
         // arrange
         Benchmark entry = new Benchmark();
@@ -169,7 +169,7 @@ public class BenchmarkTests
     /// Tests to ensure ToString returns properly.
     /// </summary>
     [Fact]
-    public void ToString_ReturnsFormattedString()
+    public void ShouldReturnFormattedString()
     {
         // arrange
         Benchmark entry = new Benchmark();
