@@ -10,24 +10,18 @@ public class Day06 : DayBase
 
     public override int SolvePart1()
     {
-        var input = _input1;
-        const int packetSize = 4;
-        if (string.IsNullOrWhiteSpace(input)) return -1;
-
-        for(int i = 0; i < input.Length; i++)
-        {
-            var packet = input.Substring(i, packetSize);
-            if (HasUniqueCharacters(packet)) return i + packetSize;
-        }
-
-        return -1;
+        return FindMarker(_input1, 4);
     }    
 
     public override int SolvePart2()
     {
-        var input = _input2;
-        const int packetSize = 14;
+        return FindMarker(_input2, 14);
+    }
+
+    private int FindMarker(string input, int packetSize)
+    {
         if (string.IsNullOrWhiteSpace(input)) return -1;
+        if (packetSize <= 0 || packetSize > input.Length) return -1;
 
         for (int i = 0; i < input.Length; i++)
         {
